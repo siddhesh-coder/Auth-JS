@@ -47,7 +47,7 @@ h1 {
 
 #main-container {
   min-width: 450px;
-  height: 550px;
+  height: 500px;
   background-color: white;
   padding: 20px;
   display: flex;
@@ -56,15 +56,40 @@ h1 {
   align-items: center;
 }
 
+.current-state{
+  font-size: larger;
+  font-weight: 700;
+  color:#4513e8;
+}
+
+header>div{
+  height: 35px;
+  border-bottom: 4px solid #2800ab;
+}
+
 main{
   width: 360px;
-  height: 200px;
+  height: 260px;
 }
 
 .submission {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+input{
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #d2d2d2;
+  border-style: none;
+  padding-inline-start: 10px;
+  font-size: 15px;
+}
+
+.forget{
+  font-size: 15px;
 }
 
 .card {
@@ -74,20 +99,24 @@ main{
 button {
   width: 170px;
   border-radius: 20px;
-  border: 1px solid rgb(67, 67, 67);
+  border-style: none;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: white;
   cursor: pointer;
-  transition: 0.2s;
-  color: rgb(67, 67, 67);
+  transition: 0.3s;
+  color: white;
   margin: 10px;
+  background-color: #2800ab;
 }
 button:hover {
-  background-color: #2800ab;
   color: white;
+}
+
+button.disable{
+  background-color: #d2d2d2;
+  color: rgb(67, 67, 67);
 }
 
 /* @media (prefers-color-scheme: light) {
